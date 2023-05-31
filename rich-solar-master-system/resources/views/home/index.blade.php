@@ -1,0 +1,9 @@
+@extends('layout')
+@section('content')
+@include('partials._hero')
+@include('partials._aboutUs')
+@include('partials._homeSlider')
+@include('partials._products')
+@include('partials._services')
+@include('partials._contact')
+@endsection

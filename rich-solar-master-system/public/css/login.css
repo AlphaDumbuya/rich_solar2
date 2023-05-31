@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: linear-gradient(50deg, #4d4d4b, #d11d2c);
+    user-select: none;
+    overflow-x: hidden;
+    color: #363949;
+}
+.container{
+    background: linear-gradient(0deg, rgba(0,0,0, 0.7), rgba(0,0,0,0.7));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+main{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 4%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.left-side{
+    background: linear-gradient(50deg, #41f1b6, #ff7782);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.left-side h1{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 900;
+}
+.left-side:after{
+    content: '';
+    width: 60%;
+    height: 3px;
+    background: #ff7782;
+    border-radius: 1%;
+}
+.left-side p{
+    font-weight: 600;
+    color: #ecebeb;
+}
+.right-side{
+    background: #fff;
+}
+
+/*SMARTPHONES*/
+@media screen and (max-width: 1200px){
+    .left-side{
+        background: linear-gradient(50deg, #41f1b6, #ff7782);
+        color: #ecebeb;
+
+    }
+    .left-side h1{
+        text-align: center;
+        color: #fff;
+    }
+
+}
+
+@media screen and (max-width: 760px){
+    .left-side{
+        display: none;
+    }
+}
